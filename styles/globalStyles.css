@@ -1,0 +1,28 @@
+@import url(../pages/cadastro/styles/index.css);
+@import url(../styles/button.css);
+@import url(../styles/modal.css);
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'IBM plex sans';
+}
+
+:root {
+  --brand1: #374FC8;
+  --brand200: #3A55D9;
+  --gray100: #22262A;
+  --gray200: #353B41;
+  --gray300: #484F56;
+  --gray400: #878F97;
+  --gray500: #ADB5BD;
+  --gray600: #EAEDF0;
+  --gray700: #F0F2F4;
+  --gray800: #F9FAFB;
+  --gray900: #D9D9D9;
+  --alert100: #C83751;
+  --alert200: #DB3D5A;
+  --sucess100: #087D5A;
+}

@@ -1,0 +1,9 @@
+.img-profile{
+    width: 50px;
+    height: 45px;
+    border: 1px solid var(--brand1);
+    border-radius: 50%;
+}
+.wid{
+    width: 60em;
+}

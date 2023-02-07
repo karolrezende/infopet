@@ -1,0 +1,14 @@
+.main-sign{
+    margin: 0 auto;
+}
+.grid-1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4em;
+}
+.body-sign{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    font-family: "Inter, sans-serif";
+}

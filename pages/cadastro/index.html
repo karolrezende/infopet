@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/globalStyles.css">
+    <script src="/scripts/api.js" defer></script>
+    <script src="/scripts/sign.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Petinfo - Cadastro</title>
+</head>
+<body>
+    <main class="max-w-4xl grid-1 my-0 mx-auto mt-40">
+        <section class="section-sign border rounded ">
+            <div class="mx-6 flex flex-col my-12 gap-6 h-5/6 justify-around">
+                <header class="header-sign flex flex-row justify-between">
+                    <h1 class="header-title text-xl font-medium">Cadastro</h1>
+                    <button class="button-white" ><a href="../login/index.html">Voltar para o login</a> </button>
+                </header>
+                <form id="form" class="h-full my-0 mx-auto" onsubmit="cadUser()">
+                    <label for="name" class="font-medium inline-block mt-5 mb-2">Usuário</label>
+                    <input required='required' class="input w-full mb-4" type="name" name="name" id="form-name" placeholder="Digite seu usuário aqui">
+                    <label for="email" class="font-medium inline-block mt-5 mb-2">Email</label>
+                    <input required='required' class="input w-full" type="email"name='email' id="form-email" placeholder="Digite seu email aqui">
+                    <p class="text-xs mt-1 w-200"></p>
+                    <label for="picture" class="font-medium inline-block mt-5 mb-2">Link da foto do perfil</label>
+                    <input required='required' class="input w-full mb-4" type="text" name="picture" id="form-picture" placeholder="Insira o link aqui">
+                    <label for="password" class="font-medium inline-block mt-5 mb-2">Senha</label>
+                    <input required='required' class="input w-full mb-8" type="password" name="password" id="form-password" placeholder="Digite sua senha aqui">
+                    <div>
+                        <button class="button-blue w-full mb-4" id="button-sign" type = 'submit' onclick="modalShow()">Cadastrar</button>
+                        <button class="w-full inline-block button-white text-base hover:text-base" ><a href='../login/index.html'>Voltar para o login</a></button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="section-info my-auto mx-0">
+            <div class="section-info--info flex flex-col gap-8">
+                <h1 class="text-3xl font-bold">Petinfo</h1>
+                <h2 class="text-3xl font-bold text-cyan-600">Oooooooba!</h2>
+                <p class="font-medium font-normal mb-8">Agora vamos poder contribuir para o bem <br>estar do seu pet por meio do conhecimento</p>
+            </div>
+            <div class="flex gap-4">
+                <div class="gap-4">
+                    <img src="/img/cat-1.svg" class="w-full" alt="Gatinho fofo">
+                </div>
+                <div class="flex flex-col gap-4">
+                    <div class="flex gap-4">
+                        <img src="/img/cat-2.svg" alt="Gatinho fofo">
+                        <img src="/img/cat-3.svg" alt="Gatinho fofo">
+                    </div>
+                    <img src="/img/cat-4.svg" class="" alt="Gatinho fofo">
+                </div>
+            </div>
+        </section>
+        <div class="modal"  id="modal">
+            <div class="m-4">
+                <div class="modal-header gap-4 flex mb-2">
+                    <img src="/img/sucess.svg" alt="logo sucesso">
+                    <h2 class="text-base font-medium">Cadastro realizado com sucesso!</h2>
+                </div>
+                <p class="text-base">Agora você pode acessar os conteúdos utilizando <br> 
+                    seu usuário e senha na página de login: <a href="../login/index.html" class="text-cyan-700">Acessar página de login </a> 
+                </p>
+            </div>
+        </div>
+    </main>
+    
+</body>
+</html>

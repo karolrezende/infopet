@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/globalStyles.css">
+    <link rel="stylesheet" href="./styles/home.css">
+    <script type='module' src="/scripts/renderApi.js" defer></script>
+    <script src="/scripts/api.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Petinfo - Cadastro</title>
+</head>
+<body class="min-w-full flex align-center flex-col">
+    <section class="wid my-0 mx-auto">
+        <header class="flex justify-between py-20">
+            <h1 class="text-2xl font-medium">Petinfo</h1>
+            <div class="flex gap-10" id="profile">
+                <button class="button-blue flex">Criar publicação</button>
+                
+            </div>
+        </header>
+    </section>
+    <main>
+        <div class="bg-[#F8F9FA] py-5">
+            <div class="my-0 mx-auto wid">
+                <h2 class="font-medium text-2xl wid">Feed</h2>
+            </div>
+        </div>
+        <section class="my-0 mx-auto wid" id="postlist">
+           
+        </section>
+
+        <section class="bg-[#1E1E1E80] bkg modal-control">
+            <div class="modal-modal"></div>
+        </section>
+    </main>
+</body>
+</html>

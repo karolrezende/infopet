@@ -1,0 +1,54 @@
+.modal{
+    background: #FCFEFF;
+    box-shadow: 0px 4px 30px -12px rgba(0, 0, 0, 0.4);
+    border-radius: 4px;
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+    padding: 8px;
+    display: none;
+}
+.modal-show{
+    display: inline-block;
+    animation: transparency 0.8s;
+}
+@keyframes transparency{
+    0%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 0.2;
+    }
+    50%{
+        opacity: 0.4;
+    }
+    70%{
+        opacity: 0.7;
+    }
+    80%{
+        opacity: 0.9;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/* modal post*/
+.modal-control{
+    min-height: 100%;
+    min-width: 100%;
+    top:0;
+    position: fixed;
+    display:none;
+}
+.modal-modal{
+    background-color: white;
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 10em;
+    padding: 3em;
+    border-radius: 4px;
+}
+.modal-show-show{
+    display: inline-block;
+}
